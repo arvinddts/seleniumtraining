@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+  <test name="Test">
+  <parameter name="locationofchromedriver" value="C:/Users/arv/chromedriver.exe"/> 
+  <parameter name="facebookurl" value="https://www.facebook.com"/>
+  <parameter name="luftansaurl" value="http://www.lufthansa.com"/> 
+  <parameter name="browser" value="firefox"/> 
+    <classes>
+      <class name="testng.FirstTestngDemo"/>      
+    </classes>
+  </test> 
+</suite> 

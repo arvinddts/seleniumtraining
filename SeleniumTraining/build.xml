@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<project default="testJunit" basedir=".">
+	<target name="testJunit">	
+		<taskdef resource="net/sf/antcontrib/antlib.xml"> 
+		<classpath>
+		    <pathelement location="lib/ant-contrib-1.0b3.jar"/>
+		  </classpath>		
+			</taskdef>
+			<path id="class.path">
+		      <pathelement path="${basedir}/bin"/>
+		      <fileset dir="lib">
+		        <include name="**/*.jar"/>
+		      </fileset>		       
+		    </path>	
+			<javac srcdir="src" destdir="bin">
+         		<classpath>
+					<path refid="class.path"/>
+				</classpath> 
+        	 </javac>       	 
+		<junit printsummary="true">	
+			<classpath>
+				<path refid="class.path"/>
+			</classpath> 
+		    <test name="TestFacebook"/>
+			 <formatter type="xml"/>
+			</junit>
+		  <junitreport todir="./reports">
+		  <fileset dir=".">
+		    <include name="TEST-*.xml"/>
+		  </fileset>
+		  <report format="frames" todir="./reports/html"/>
+		</junitreport>  		
+		</target>	
+	</project>
+	

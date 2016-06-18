@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <parameter name="browser" value="chrome"/>
+  <test name="Test1(failed)" parallel="methods">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testng.GridDemo">
+        <methods>
+          <include name="calculatepercent3" invocation-numbers="0"/>
+          <include name="launchapp"/>
+          <include name="calculatepercent1" invocation-numbers="0"/>
+          <include name="calculatepercent" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testng.GridDemo -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

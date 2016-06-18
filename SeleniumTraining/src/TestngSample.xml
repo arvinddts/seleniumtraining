@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="FirstSuiteExample" parallel="false">
+  <test name="FirstTestTestng">
+    <classes>
+      <class name="testng.TestngSample"/>
+<!--      <methods>
+       <exclude name="no_user_and_password"/>
+       </methods> -->
+    </classes>
+  </test>   
+</suite> 

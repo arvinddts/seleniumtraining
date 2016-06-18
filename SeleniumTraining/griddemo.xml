@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="methods" thread-count="10">
+  <test name="Test1" group-by-instances="true">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testng.GridDemo"/>
+    </classes>
+ <!--   <methods>       
+        <include name="calculatepercent" />     
+      </methods> -->
+  </test> 
+
+
+<!--  <test name="Test2">
+  <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="testng.GridDemo"/>
+    </classes>
+    <methods>       
+        <include name="calculatepercent1" />     
+      </methods> 
+  </test> -->
+  
+  </suite> 
