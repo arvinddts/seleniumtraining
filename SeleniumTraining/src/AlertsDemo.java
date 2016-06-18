@@ -18,7 +18,7 @@ public class AlertsDemo {
 	static ChromeDriver driver=null;
 	static WebElement webelement=null;
 	public static void main(String[] args) throws InterruptedException, AWTException {
-		 System.setProperty("webdriver.chrome.driver", "C:/Users/arv/chromedriver.exe");
+		 System.setProperty("webdriver.chrome.driver", "C:/Users/arvind/chromedriver.exe");
 		driver= new ChromeDriver();	
 		driver.manage().window().maximize();		
 		driver.get("http://the-internet.herokuapp.com/javascript_alerts");
